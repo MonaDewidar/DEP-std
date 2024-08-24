@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        table ,hh , td{
+           border: 1px solid black;
+
+        }
+        td , th{
+            padding: 10px;
+            text-align: center;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 50%;
+            margin: auto;
+        }
+        .form-container fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .form-container legend {
+            font-weight: bold;
+        }
+        .form-container label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="tel"],
+        .form-container input[type="email"],
+        .form-container input[type="number"] {
+            width: calc(100% - 20px);
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .form-container input[type="number"] {
+            width: 50px;
+        }
+        .form-container input[type="submit"] {
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+        .form-container .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+<!--form-->
+<form action="Thank_for_regester.html" method="post">
+<label>First Name :</label> <input type="text" required> <br> <br>
+<label>Last Name  :</label> <input type="text" required><br> <br>
+<label>Password   :</label> <input type="password" required> <br> <br>
+<label>Age:</label> <input type="number" required> <br>
+<br>
+<label>Hobbies</label> <br>
+<input type="checkbox" value="sleeping"> <label>sleeping</label> <br>
+<input type="checkbox" value="Reading"> <label>Reading</label> <br>
+<input type="checkbox" value="Codding"><label>Codding</label> <br>
+<input type="checkbox" value="Dancing"><label>Dancing</label> <br>
+<input type="checkbox" value="Eatting"><label>Eatting</label> <br>
+<input type="checkbox" value="Watching_TV"><label>Watching_TV</label> <br>
+<br>
+<label>Gender</label>  <br>
+<input type="radio" value="Female"> <label>Female</label> <br>
+<input type="radio" value="Male"> <label>Male</label> <br>
+<br>
+<label>NOTES</label> <textarea row="4" cols="50"></textarea>
+<br>
+<input type="button" value="submit">
+</form>
+
+<br>
+<br>
+    <!--image map-->
+    <img src="img_map.png" alt="loading" usemap="#c++">
+    <map name="c++">
+        <area shape="rect" coords="600,150,750,700" alt="Udemy" href="https://udemy.com">
+        <area shape="rect" coords="100,150,300,300" alt="Codeforces" href="https://codeforces.com">
+        <area shape="rect" coords="400,50,500,150" alt="Vjudge" href="https://vjudge.net">
+    
+    </map>
+<br> <br>
+<iframe src="https://depi.gov.eg/"
+width="300px"
+height="300px"
+frameborder="5">
+</iframe>
+<br><br>
+ <!-- table -->
+ <table>
+    <tr>
+        <th>#</th>
+        <th>First Name </th>
+        <th>Last Name </th>
+        <th>Salary </th>
+        <th>Position </th>
+        <th>Age </th>
+        <th>Action </th>
+    </tr>
+    <tr>
+        <td>NA</td>
+        <td><input type="text" ></td>
+        <td><input type="text" ></td>
+        <td><input type="text" ></td>
+        <td><input type="text" ></td>
+        <td><input type="text" ></td>
+        <td> NA</td>
+    </tr>
+    <tr>
+        <td>1</td><td>Abanoub</td>  <td>Nabil</td>  <td>5000</td>  <td>Instructor</td>  <td>28</td>  
+        <td><input type="button" value="Details" style="background-color: blue;"><input type="button" value="Edit" style="background-color: green;"><input type="button" value="Delete" style="background-color: red;"></td>
+    </tr>
+    <tr>
+        <td>2</td><td>Ahmed</td>  <td>Mamdoh</td>  <td>5000</td>  <td>Training Manager</td>  <td>35</td>  
+    <td><input type="button" value="Details" style="background-color: blue;"><input type="button" value="Edit" style="background-color: green;"><input type="button" value="Delete" style="background-color: red;"></td>
+    </tr>
+    <tr>
+        <td>3</td><td>Mphamed</td>  <td>sayed</td>  <td>5000</td>  <td>Instructor</td>  <td>35</td>  
+        <td><input type="button" value="Details" style="background-color: blue;"><input type="button" value="Edit" style="background-color: green;"><input type="button" value="Delete" style="background-color: red;"></td>
+    </tr>
+    <tr>
+        <td>4</td><td>Christen</td>  <td>Zaref</td>  <td>5000</td>  <td>Instructor</td>  <td>32</td>  
+        <td><input type="button" value="Details" style="background-color: blue;"><input type="button" value="Edit" style="background-color: green;"><input type="button" value="Delete" style="background-color: red;"></td>
+    </tr>
+</table>
+
+<div class="form-container">
+    <form>
+        <fieldset>
+            <legend>Customer Info</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+            <label for="phone">Telephone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Pattern: 1-234-567-8910" pattern="1-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </fieldset>
+        <fieldset>
+            <legend>Books</legend>
+            <input type="text" id="book" name="book">
+            
+            <label for="quantity">Quantity (Maximum 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- <div class="footer">
+        &copy; 2011 Acme United. All rights reserved.
+    </div> -->
+</div>
+
+<br>
+<br>
+<ol>
+    <li>coffe</li>
+    <li>tea 
+        <ul>
+            <li>Black tea</li>
+            <li>Green tea</li>
+        </ul>
+    </li>
+    <li>Milk</li>
+</ol>
+</body>
+</html>
